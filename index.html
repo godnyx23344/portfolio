@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nyx - Poet & Writer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body, h1, h2, h3, h4, h5, h6 {font-family: "Montserrat", sans-serif}
+      .w3-row-padding img {margin-bottom: 12px}
+      .w3-sidebar {width: 120px;background: #222;}
+      #main {margin-left: 120px}
+      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+      #poems-section {
+        display: flex;
+        flex-wrap: wrap; /* Allow poems to wrap if there are more than 3 */
+        justify-content: space-around;
+        margin: 50px 0;
+      }
+
+      .poem-box {
+        background-color: #222; /* Dark background */
+        color: #fff; /* White text */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 30%;
+        text-align: center;
+        margin-bottom: 20px; /* Add spacing between poems */
+      }
+
+      .poem-box h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+      }
+
+      .poem-box p {
+        font-size: 1em;
+        line-height: 1.5em;
+      }
+    </style>
+  </head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#works" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>WORKS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:33% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:33% !important">ABOUT</a>
+    <a href="#works" class="w3-bar-item w3-button" style="width:33% !important">WORKS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:33% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Nyx.</h1>
+    <p>Poet and Writer.</p>
+    <!-- Image -->
+    <img src="https://i.pinimg.com/564x/c1/34/dd/c134dd15835e1d1253944384f834019d.jpg" alt="Nyx Image" style="width:50%;border-radius:50%;">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      I am Nyx, a poet and writer dedicated to capturing the human experience through words. My work explores themes of love, loss, and the beauty found in the everyday moments. I believe that poetry is a powerful medium for connecting with others and expressing emotions that are often difficult to articulate.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Specializations</h3>
+    <p class="w3-wide">Poetry</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Creative Writing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Literary Analysis</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Published Poems
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        Short Stories
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Literary Awards
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">30+</span><br>
+        Workshops Attended
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Portfolio
+    </button>
+  <!-- End About Section -->
+  </div>
+
+  <!-- Poems Section -->
+  <section id="poems-section">
+    <div class="poem-box">
+      <h2>Whispers of the Night</h2>
+      <p>The moonlight dances on silent waters,<br>
+         Whispering secrets only the night can hear.<br>
+         In the stillness, a poet's heart falters,<br>
+         Yet in the darkness, the words appear.</p>
+    </div>
+
+    <div class="poem-box">
+      <h2>Echoes of Time</h2>
+      <p>In the corridors of forgotten dreams,<br>
+         Where shadows of the past reside,<br>
+         Time echoes with silent screams,<br>
+         Of memories long since died.</p>
+    </div>
+
+    <div class="poem-box">
+      <h2>Veil of Illusions</h2>
+      <p>Beneath the veil of illusions deep,<br>
+         Lies a truth we seldom see,<br>
+         In the waking world or in our sleep,<br>
+         It waits for those who seek to be free.</p>
+    </div>
+
+    <div class="poem-box">
+      <h2>Flickers of Hope</h2>
+      <p>In the darkest hours of the night,<br>
+         When despair seems to consume the soul,<br>
+         A flicker of hope, however slight,<br>
+         Can guide us towards a brighter goal.</p>
+    </div>
+
+    <div class="poem-box">
+      <h2>Chasing Shadows</h2>
+      <p>We chase the shadows of our past,<br>
+         Through the corridors of memory's haze,<br>
+         Searching for truths that never last,<br>
+         In the labyrinth of bygone days.</p>
+    </div>
+
+    <div class="poem-box">
+      <h2>Silent Symphony</h2>
+      <p>In the silence of the midnight air,<br>
+         A symphony of stars begins to play,<br>
+         Notes of dreams and wishes rare,<br>
+         Guiding our hearts in a celestial ballet.</p>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Kolkata, India</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 1234567890</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: spacenyx233@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><textarea class="w3-input w3-padding-16" placeholder="Message" required name="Message"></textarea></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-small"></p>
+  <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="" target="_blank">Start now</a> 
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
